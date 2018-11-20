@@ -106,12 +106,12 @@ h1 {
 <script type="text/javascript">
 // DATABASE
 var deadlines= new Array();
-var shouldDisplay = {"Machine Learning": true,
-                    "Algorithms": true,
-                    "AI": true,
+var shouldDisplay = {
+                    "Machine Learning & AI": true,
                     "Computational Biology": true,
                     "Linguistics": true,
-                    "Medical Image": true
+                    "Medical Image": true,
+                    "Computer Vision": true,
                     }
 // Machine Learning
 deadlines.push({
@@ -122,52 +122,80 @@ deadlines.push({
   approx: 0,
 });
 deadlines.push({
+  venue: "IPMI",
+  area: "Medical Image",
+  deadline: moment("2018-12-03 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+  website: "https://ipmi2019.cse.ust.hk/index.html",
+  approx: 0,
+});
+deadlines.push({
+  venue: "MIDL",
+  area: "Medical Image",
+  deadline: moment("2018-04-11 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+  website: "https://midl.amsterdam/",
+  approx: 0,
+});
+deadlines.push({
+  venue: "CVPR",
+  area: "Computer Vision",
+  deadline: moment("2018-11-16 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+  website: "http://cvpr2019.thecvf.com/",
+  approx: 0,
+});
+deadlines.push({
+  venue: "ICCV",
+  area: "Computer Vision",
+  deadline: moment("2019-03-22 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+  website: "http://iccv2019.thecvf.com/submission/timeline",
+  approx: 0,
+});
+deadlines.push({
+  venue: "ECCV",
+  area: "Computer Vision",
+  deadline: moment("2018-03-14 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+  website: "https://eccv2018.org/",
+  approx: 0,
+});
+deadlines.push({
   venue: "ICML",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2019-01-18 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "http://icml.cc",
   approx: 0,
 });
 deadlines.push({
   venue: "SysML",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2018-09-28 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "http://sysml.cc",
   approx: 0,
 });
 deadlines.push({
   venue: "UAI",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2018-03-09 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "http://www.auai.org/uai2018/index.php",
   approx: 0,
 });
 deadlines.push({
   venue: "NIPS",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2018-05-18 20:00:00 -0000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "https://nips.cc/",
   approx: 0,
 });
 deadlines.push({
   venue: "AISTATS",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2018-10-04 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "http://www.aistats.org/",
   approx: 0,
 });
 deadlines.push({
   venue: "ICLR",
-  area: "Machine Learning",
+  area: "Machine Learning & AI",
   deadline: moment("2018-09-27 14:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
   website: "http://www.iclr.cc",
-  approx: 0,
-});
-deadlines.push({
-  venue: "SODA",
-  area: "Algorithms",
-  deadline: moment("2018-07-05 16:59:00 -0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://www.siam.org/meetings/da19/",
   approx: 0,
 });
 deadlines.push({
@@ -178,22 +206,15 @@ deadlines.push({
   approx: 0,
 })
 deadlines.push({
-  venue: "WABI",
-  area: "Algorithms",
-  deadline: moment("2018-05-04 23:59:00 -1100", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://algo2018.hiit.fi/wabi",
-  approx: 0,
-});
-deadlines.push({
   venue: "AAAI",
-  area: "AI",
+  area: "Machine Learning & AI",
   deadline: moment("2018-09-05 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
   website: "https://aaai.org/Conferences/AAAI-19/",
   approx: 0,
 });
 deadlines.push({
   venue: "KDD",
-  area: "AI",
+  area: "Machine Learning & AI",
   deadline: moment("2019-02-03 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
   website: "https://www.kdd.org/kdd2019",
   approx: 0,
@@ -354,8 +375,8 @@ function toggleLin {
         <div id="currtime"></div>
         <br />
         Medical Image:<input type="checkbox" id="Medical Image"  onclick="" checked>
-        Machine Learning:<input type="checkbox" id="Machine Learning"  onclick="" checked>
-        AI:<input type="checkbox" id="AI"  onclick="" >
+        Computer Vision:<input type="checkbox" id="Computer Vision"  onclick="" checked>
+        Machine Learning & AI:<input type="checkbox" id="Machine Learning & AI"  onclick="" checked>
         Computational Biology:<input type="checkbox" id="Computational Biology"  onclick="" >
         Algorithms:<input type="checkbox" id="Algorithms"  onclick="" >
         Linguistics:<input type="checkbox" id="Linguistics"  onclick="" >
